@@ -1,6 +1,6 @@
 language: python
 python:
- - "2.7.8"
+ - "2.7"
 
 install: "pip install -r requirements.txt"
 
@@ -11,6 +11,6 @@ before_script:
 script:
  - lettuce AceptanceTest
  - cd UnitTest
- - python TestCalcultor.py -v
+ - python TestCalcultor.py 
  - coverage run --branch TestCalcultor.py
  - coverage report -m
